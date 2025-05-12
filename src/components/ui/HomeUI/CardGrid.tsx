@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from '../ui/Card'
-import works from '../../constants/works'
+import Card from '../Card'
+import works from '../../../constants/works'
 
 const CardGrid: React.FC = () => {
   return (

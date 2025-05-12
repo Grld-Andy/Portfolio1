@@ -1,5 +1,5 @@
 import React from 'react'
-import {FourBars, FourBarsReverse} from '../ui/FourBars'
+import {FourBars, FourBarsReverse} from '../FourBars'
 
 const Hero: React.FC = () => {
     return (

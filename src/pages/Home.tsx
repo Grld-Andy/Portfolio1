@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../components/HomeUI/Hero'
-import CardGrid from '../components/HomeUI/CardGrid'
-import LetsConnect from '../components/HomeUI/LetsConnect'
-import ToolsWheel from '../components/HomeUI/ToolsWheel'
+import Hero from '../components/ui/HomeUI/Hero'
+import CardGrid from '../components/ui/HomeUI/CardGrid'
+import LetsConnect from '../components/ui/HomeUI/LetsConnect'
+import ToolsWheel from '../components/ui/HomeUI/ToolsWheel'
 
 const Home: React.FC = () => {
   return (
