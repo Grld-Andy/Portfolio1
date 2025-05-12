@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           Get In Touch
         </button>
       </div>
-      <div className='fixed z-50 top-3 left-0 w-full'>
+      <div className='fixed z-50 top-3 left-0 w-full pointer-events-none'>
         <h1 className='text-center text-[25px] jedira'>ed.win</h1>
       </div>
     </div>
