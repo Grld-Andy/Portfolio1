@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Jedira';
+  src: url('/fonts/Jedira_Font/jedira-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.jedira {
+  font-family: 'Jedira' ,sans-serif;
+}

@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
             Get In Touch
         </button>
     </div>
-    <div className='absolute top-4 left-0 w-full'>
-        <h1 className='text-center text-[22px]'>ed.win</h1>
+    <div className='absolute top-3 left-0 w-full'>
+        <h1 className='text-center text-[25px] jedira'>ed.win</h1>
     </div>
     </>
   )
