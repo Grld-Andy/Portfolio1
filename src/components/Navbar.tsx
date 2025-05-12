@@ -1,0 +1,23 @@
+import React from 'react'
+
+const Navbar: React.FC = () => {
+  return (
+    <>
+    <div className='flex justify-between items-center px-10 py-4'>
+        <ul className='flex gap-8'>
+            <li className='cursor-pointer'>HOME</li>
+            <li className='cursor-pointer'>ABOUT</li>
+            <li className='cursor-pointer'>STUDIO</li>
+        </ul>
+        <button className='bg-[#7232B8] w-[120px] cursor-pointer rounded-2xl py-[10px] text-[12px] font-semibold'>
+            Get In Touch
+        </button>
+    </div>
+    <div className='absolute top-4 left-0 w-full'>
+        <h1 className='text-center text-[22px]'>ed.win</h1>
+    </div>
+    </>
+  )
+}
+
+export default Navbar
