@@ -2,12 +2,12 @@ import React from 'react'
 
 const Footer: React.FC = () => {
   return (
-    <div className='border-t-[1px] border-[#75757A] mt-10 px-10 flex justify-between'>
+    <div className='border-t-[1px] border-[#75757A] mt-10 mb-10 md:mb-0 px-10 flex justify-between flex-col md:flex-row'>
         <div>
             <h1 className='jedira text-[200px]'>ed.win</h1>
-            <h1 className='text-[#75757A] text-[10px]'>@2025 ed.win</h1>
+            <h1 className='text-[#75757A] text-[10px] relative bottom-10 left-5'>@2025 ed.win</h1>
         </div>
-        <div className='flex gap-20 mt-5 mr-14'>
+        <div className='flex gap-20 mt-5 md:mr-14 justify-end'>
             <section>
                 <h3 className='font-bold'>Links</h3>
                 <ul className='flex flex-col gap-4'>
