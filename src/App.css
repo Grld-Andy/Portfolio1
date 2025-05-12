@@ -17,11 +17,14 @@
   color: transparent;
   background-clip: text;
 }
-.button_glow:hover{
+.button_glow{
   transition: 150ms ease-out;
   &:hover{
     text-shadow: 0 0 5px white;
     filter: brightness(2);
     box-shadow: 0 0 5px white;
   }
+}
+.form_button_glow:hover{
+  box-shadow: 5px 5px 20px #7232B8, -5px -5px 20px #683eda;
 }

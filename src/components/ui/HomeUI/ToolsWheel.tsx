@@ -4,7 +4,7 @@ import { design, figma, framer, github, illustrator, itunes, keyframeTimes, obs,
 
 const ToolsWheel: React.FC = () => {
   return (
-    <div className='md:mt-52 mt-20'>
+    <div className='md:mt-52 mt-20 overflow-hidden max-w-full'>
       <div className='flex items-center justify-center relative'>
         <motion.div
           initial={{scale:1}}

@@ -29,8 +29,8 @@ const Navbar: React.FC = () => {
             </NavLink>
           </li>
         </ul>
-        <button className='bg-[#7232B8] w-[120px] cursor-pointer rounded-lg py-[10px] text-[12px] font-semibold'>
-          Get In Touch
+        <button className='bg-gradient-to-br from-purple-500 to-purple-700 transition-all duration-150 form_button_glow w-[120px] cursor-pointer rounded-lg py-[10px] text-[12px] font-semibold'>
+          <p className='rounded-lg'>Get In Touch</p>
         </button>
       </div>
       <div className='fixed z-50 top-3 left-0 w-full pointer-events-none'>
