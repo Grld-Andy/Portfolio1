@@ -4,7 +4,7 @@ import { design, figma, framer, github, illustrator, itunes, keyframeTimes, obs,
 
 const ToolsWheel: React.FC = () => {
   return (
-    <div className='md:mt-52 pt-20 overflow-x-hidden max-w-full'>
+    <div className='md:pt-32 pt-10 overflow-x-hidden max-w-full'>
       <div className='flex items-center justify-center relative'>
         <motion.div
           initial={{scale:1}}
@@ -31,7 +31,7 @@ const ToolsWheel: React.FC = () => {
                 repeatDelay: 0.5,
               },
             }}
-            className='scale-100 md:scale-125 rounded-full w-[600px] h-[600px] flex items-center justify-center relative'>
+            className='rounded-full w-[600px] h-[600px] flex items-center scale-150 justify-center relative'>
             {[
               { img: itunes, path: [itunes, x, framer, vscode, obs, threads, itunes] },
               { img: github, path: [github, illustrator, design, ps, figma, photoshop, github] },
