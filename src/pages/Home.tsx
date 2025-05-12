@@ -1,10 +1,17 @@
 import React from 'react'
+import Hero from '../components/HomeUI/Hero'
+import CardGrid from '../components/HomeUI/CardGrid'
+import LetsConnect from '../components/HomeUI/LetsConnect'
+import ToolsWheel from '../components/HomeUI/ToolsWheel'
 
 const Home: React.FC = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className='flex flex-col gap-16'>
+      <Hero/>
+      <CardGrid/>
+      <ToolsWheel/>
+      <LetsConnect/>
+    </div>
   )
 }
 
