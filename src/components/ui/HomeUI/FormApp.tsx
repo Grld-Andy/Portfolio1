@@ -27,7 +27,7 @@ const FormApp: React.FC = () => {
                 </div>
             </div>
             <div className='w-[calc(100%-80px)] mx-10 my-5 flex flex-col gap-5'>
-                <textarea className='rounded-lg bg-[#0D0D0D] p-3 w-full h-[350px] placeholder:text-[#80808050]' placeholder='Write your message here'></textarea>
+                <textarea className='active:outline-none focus-visible:outline-none rounded-lg bg-[#0D0D0D] p-3 w-full h-[350px] placeholder:text-[#80808050]' placeholder='Write your message here'></textarea>
                 <div className='flex justify-end'>
                     <button className='bg-[#7232B8] w-[120px] cursor-pointer rounded-lg py-[14px] text-[15px] font-semibold'>
                         Send

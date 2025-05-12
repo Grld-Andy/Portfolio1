@@ -10,7 +10,7 @@ const LetsConnect: React.FC = () => {
             Visuals
         </p>
         <div className='flex justify-center'>
-            <button className='border-[2px] border-[#75757A] text-[#75757A] hover:text-white hover:border-white transition rounded-full text-[25px] font-semibold px-10 py-2'>Lets Connect</button>
+            <button className='border-[2px] border-[#75757A] text-[#75757A] button_glow rounded-full text-[25px] font-semibold px-10 py-2'>Lets Connect</button>
         </div>
         <div className='flex flex-col gap-10'>
             <h3 className='text-center text-[50px] text-[#75757A] font-extrabold'>send a mail</h3>

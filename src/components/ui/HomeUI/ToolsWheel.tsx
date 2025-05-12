@@ -1,70 +1,83 @@
 import React from 'react'
 import { motion } from "motion/react"
-import { design, figma, framer, github, illustrator, itunes, obs, photoshop, ps, threads, vscode, x } from '../../../constants/motion'
+import { design, figma, framer, github, illustrator, itunes, keyframeTimes, obs, photoshop, ps, threads, vscode, x } from '../../../constants/motion'
 
 const ToolsWheel: React.FC = () => {
   return (
     <div className='md:mt-52 mt-20'>
       <div className='flex items-center justify-center relative'>
         <motion.div
-          initial={{}}
+          initial={{scale:1}}
           animate={{
-            transition: {duration: 2}
-          }}
-          className='border scale-100 md:scale-125 rounded-full w-[600px] h-[600px] flex items-center justify-center relative'>
-          
-          <motion.img
-            initial={{x:itunes.position.x,y:itunes.position.y}}
+            scale: [1, 1, 0.4, 0.4, 1, 1],
+            transition: {
+              duration: 8,
+              times: [0, 0.83, 0.855, 0.87, 0.89, 1],
+              // times: [0, 0.84, 0.87, 0.89, 0.91, 1],
+              ease: 'easeInOut',
+              repeat: Infinity,
+              repeatDelay: 0.5,
+            },
+          }}>
+          <motion.div
+            initial={{rotate:0}}
             animate={{
-              x:[itunes.position.x,x.position.x,framer.position.x,vscode.position.x,obs.position.x,threads.position.x,itunes.position.x],
-              y:[itunes.position.y,x.position.y,framer.position.y,vscode.position.y,obs.position.y,threads.position.y,itunes.position.y],
-              transition: {duration: 10, times: [0,0.1,0.2,0.3,0.4,0.5,0.6], ease: 'easeIn', repeat: Infinity, repeatDelay: 0.5}
+              rotate: [0, 0, 30, 30, 0],
+              transition: {
+                duration: 8,
+                times: [0, 0.85, 0.90, 0.92, 1],
+                ease: 'easeInOut',
+                repeat: Infinity,
+                repeatDelay: 0.5,
+              },
             }}
-            className='w-14 h-14 absolute' src={itunes.image}/>
-          <motion.img
-            initial={{x:github.position.x,y:github.position.y}}
-            animate={{
-              x:[github.position.x,illustrator.position.x,design.position.x,ps.position.x,figma.position.x,photoshop.position.x,github.position.x],
-              y:[github.position.y,illustrator.position.y,design.position.y,ps.position.y,figma.position.y,photoshop.position.y,github.position.y],
-              transition: {duration: 10, times: [0,0.1,0.2,0.3,0.4,0.5,0.6], ease: 'easeIn', repeat: Infinity, repeatDelay: 0.5}
-            }}
-            className='w-14 h-14 absolute rounded-lg' src={github.image}/>
-          <motion.img
-            initial={{x:x.position.x,y:x.position.y}}
-            animate={{
-              x:[x.position.x,framer.position.x,vscode.position.x,obs.position.x,threads.position.x,itunes.position.x,x.position.x],
-              y:[x.position.y,framer.position.y,vscode.position.y,obs.position.y,threads.position.y,itunes.position.y,x.position.y],
-              transition: {duration: 10, times: [0,0.1,0.2,0.3,0.4,0.5,0.6], ease: 'easeIn', repeat: Infinity, repeatDelay: 0.5}
-            }}
-            className='w-14 h-14 absolute rounded-lg' src={x.image}/>
-
-          <motion.img
-            initial={{x:illustrator.position.x,y:illustrator.position.y}}
-            animate={{
-              x:[illustrator.position.x,design.position.x,ps.position.x,figma.position.x,photoshop.position.x,github.position.x,illustrator.position.x],
-              y:[illustrator.position.y,design.position.y,ps.position.y,figma.position.y,photoshop.position.y,github.position.y,illustrator.position.y],
-              transition: {duration: 10, times: [0,0.1,0.2,0.3,0.4,0.5,0.6], ease: 'easeIn', repeat: Infinity, repeatDelay: 0.5}
-            }}
-            className='w-14 h-14 absolute' src={illustrator.image}/>
-          <motion.img className='w-14 h-14 absolute bottom-[125px] right-[15px] rounded-lg' src='/icons/framer.png'/>
-          <motion.img className='w-14 h-14 absolute bottom-[15px] right-[125px] rounded-lg' src='/icons/Design.png'/>
-
-          <motion.img className='w-14 h-14 absolute bottom-[-30px]' src='/icons/Coding.png'/>
-          <motion.img className='w-14 h-14 absolute bottom-[15px] left-[125px] rounded-lg' src='/icons/ps.png'/>
-          <motion.img className='w-14 h-14 absolute bottom-[125px] left-[15px] rounded-lg' src='/icons/OBS.png'/>
-
-          <motion.img className='w-14 h-14 absolute left-[-30px]' src='/icons/Figma icon.svg'/>
-          <motion.img className='w-14 h-14 absolute top-[125px] left-[15px] rounded-lg' src='/icons/Group 2038.png'/>
-          <motion.img className='w-14 h-14 absolute top-[15px] left-[125px] rounded-lg' src='/icons/Photoshop.png'/>
-        
+            className='scale-100 md:scale-125 rounded-full w-[600px] h-[600px] flex items-center justify-center relative'>
+            {[
+              { img: itunes, path: [itunes, x, framer, vscode, obs, threads, itunes] },
+              { img: github, path: [github, illustrator, design, ps, figma, photoshop, github] },
+              { img: x, path: [x, framer, vscode, obs, threads, itunes, x] },
+              { img: illustrator, path: [illustrator, design, ps, figma, photoshop, github, illustrator] },
+              { img: framer, path: [framer, vscode, obs, threads, itunes, x, framer] },
+              { img: design, path: [design, ps, figma, photoshop, github, illustrator, design] },
+              { img: vscode, path: [vscode, obs, threads, itunes, x, framer, vscode] },
+              { img: ps, path: [ps, figma, photoshop, github, illustrator, design, ps] },
+              { img: obs, path: [obs, threads, itunes, x, framer, vscode, obs] },
+              { img: figma, path: [figma, photoshop, github, illustrator, design, ps, figma] },
+              { img: threads, path: [threads, itunes, x, framer, vscode, obs, threads] },
+              { img: photoshop, path: [photoshop, github, illustrator, design, ps, figma, photoshop] }
+            ].map(({ img, path }, i) => {
+              const keyframes = path.flatMap(p => [p.position.x, p.position.x]);
+              const keyframesY = path.flatMap(p => [p.position.y, p.position.y]);
+              return (
+                <motion.img
+                  key={i}
+                  initial={{ x: path[0].position.x, y: path[0].position.y }}
+                  animate={{
+                    x: [...keyframes],
+                    y: [...keyframesY],
+                  transition: {
+                    duration: 8,
+                    times: keyframeTimes,
+                    ease: 'easeInOut',
+                    repeat: Infinity,
+                    repeatDelay: 0.5
+                  }
+                  }}
+                  className='w-14 h-14 absolute rounded-lg'
+                  src={img.image}
+                />
+              );
+            })}
+          </motion.div>
         </motion.div>
+
         <h2 className='text_gradient0 absolute font-extrabold text-[55px] md:text-[75px] uppercase text-center'>
           Let's create<br/>
           together
         </h2>
       </div>
       <div className='flex justify-center mt-56 mb-10'>
-        <button className='border-[2px] border-[#75757A] text-[#75757A] hover:text-white hover:border-white transition rounded-full text-[25px] font-semibold px-10 py-2'>
+        <button className='border-[2px] border-[#75757A] text-[#75757A] button_glow rounded-full text-[25px] font-semibold px-10 py-2'>
           My Tools +
         </button>
       </div>
