@@ -1,23 +1,43 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import classNames from 'classnames';
 
 const Navbar: React.FC = () => {
-  return (
-    <>
-      <div className='flex justify-between items-center px-10 py-4'>
-          <ul className='flex gap-8'>
-              <li className='cursor-pointer'>HOME</li>
-              <li className='cursor-pointer'>ABOUT</li>
-              <li className='cursor-pointer'>STUDIO</li>
-          </ul>
-          <button className='bg-[#7232B8] w-[120px] cursor-pointer rounded-lg py-[10px] text-[12px] font-semibold'>
-              Get In Touch
-          </button>
-      </div>
-      <div className='absolute top-3 left-0 w-full'>
-          <h1 className='text-center text-[25px] jedira'>ed.win</h1>
-      </div>
-    </>
-  )
-}
+  const linkClass = ({ isActive }: { isActive: boolean }) =>
+    classNames('cursor-pointer', {
+      'text-[#7232B8]': isActive,
+      'hover:text-[#7232B8]': !isActive,
+    });
 
-export default Navbar
+  return (
+    <div className='pb-20'>
+      <div className='bg-black/80 z-50 w-full fixed flex justify-between items-center px-10 py-4'>
+        <ul className='flex gap-8'>
+          <li>
+            <NavLink to="/" className={linkClass}>
+              HOME
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={linkClass}>
+              ABOUT
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/studio" className={linkClass}>
+              STUDIO
+            </NavLink>
+          </li>
+        </ul>
+        <button className='bg-[#7232B8] w-[120px] cursor-pointer rounded-lg py-[10px] text-[12px] font-semibold'>
+          Get In Touch
+        </button>
+      </div>
+      <div className='fixed z-50 top-3 left-0 w-full'>
+        <h1 className='text-center text-[25px] jedira'>ed.win</h1>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

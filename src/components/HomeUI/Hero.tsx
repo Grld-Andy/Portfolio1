@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
                 <h1 className='text-[95px] font-semibold relative bottom-2'>click To Explore</h1>
                 <FourBarsReverse/>
             </div>
-            <div className='flex gap-[530px] justify-between items-center text-[#75757A] text-[15px] uppercase'>
+            <div className='flex gap-[200px] md:gap-[530px] justify-between items-center text-[#75757A] text-[15px] uppercase'>
                 <p>
                     UI/UX Designer<br/>
                     Specializing in Framer<br/>

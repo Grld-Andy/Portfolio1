@@ -4,6 +4,11 @@ import FormApp from './FormApp'
 const LetsConnect: React.FC = () => {
   return (
     <div className='flex flex-col gap-40'>
+        <p className='uppercase text-center w-full text_gradient text-[45px] md:text-[65px]'>
+            Designing Seamless<br/>
+            Experiences & Stunning<br/>
+            Visuals
+        </p>
         <div className='flex justify-center'>
             <button className='border-[2px] border-[#75757A] text-[#75757A] hover:text-white hover:border-white transition rounded-full text-[25px] font-semibold px-10 py-2'>Lets Connect</button>
         </div>
