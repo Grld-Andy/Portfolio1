@@ -15,15 +15,15 @@ const FormApp: React.FC = () => {
             <div className='border-b-[1px] border-white/20 pb-3'>
                 <div className='flex mx-10 gap-5 border-b-[1px] border-white/20 py-3'>
                     <h3>Email: </h3>
-                    <input type='email' className='bg-transparent active:outline-none focus-visible:outline-none placeholder:text-[#80808050]' placeholder='Enter your email address'/>
+                    <input type='email' className='bg-transparent active:outline-none focus-visible:outline-none placeholder:text-[#80808050] w-full' placeholder='Enter your email address'/>
                 </div>
                 <div className='flex mx-10 gap-5 border-b-[1px] border-white/20 py-3'>
                     <h3>Name: </h3>
-                    <input type='text' className='bg-transparent active:outline-none focus-visible:outline-none placeholder:text-[#80808050]' placeholder='Enter your name'/>
+                    <input type='text' className='bg-transparent active:outline-none focus-visible:outline-none placeholder:text-[#80808050] w-full' placeholder='Enter your name'/>
                 </div>
                 <div className='flex mx-10 gap-5 py-3'>
                     <h3>Subject: </h3>
-                    <input type='text' className='bg-transparent active:outline-none focus-visible:outline-none placeholder:text-[#80808050]' placeholder='Enter subject'/>
+                    <input type='text' className='bg-transparent active:outline-none focus-visible:outline-none placeholder:text-[#80808050] w-full' placeholder='Enter subject'/>
                 </div>
             </div>
             <div className='w-[calc(100%-80px)] mx-10 my-5 flex flex-col gap-5'>
