@@ -64,3 +64,19 @@ export const keyframeTimes = [
     1
 ];
 
+
+
+export const wheelPattern = [
+              { img: itunes, path: [itunes, x, framer, vscode, obs, threads, itunes] },
+              { img: github, path: [github, illustrator, design, ps, figma, photoshop, github] },
+              { img: x, path: [x, framer, vscode, obs, threads, itunes, x] },
+              { img: illustrator, path: [illustrator, design, ps, figma, photoshop, github, illustrator] },
+              { img: framer, path: [framer, vscode, obs, threads, itunes, x, framer] },
+              { img: design, path: [design, ps, figma, photoshop, github, illustrator, design] },
+              { img: vscode, path: [vscode, obs, threads, itunes, x, framer, vscode] },
+              { img: ps, path: [ps, figma, photoshop, github, illustrator, design, ps] },
+              { img: obs, path: [obs, threads, itunes, x, framer, vscode, obs] },
+              { img: figma, path: [figma, photoshop, github, illustrator, design, ps, figma] },
+              { img: threads, path: [threads, itunes, x, framer, vscode, obs, threads] },
+              { img: photoshop, path: [photoshop, github, illustrator, design, ps, figma, photoshop] }
+            ]

@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "motion/react"
-import { design, figma, framer, github, illustrator, itunes, keyframeTimes, obs, photoshop, ps, threads, vscode, x } from '../../../constants/motion'
+import { keyframeTimes, wheelPattern } from '../../../constants/motion'
 
 const ToolsWheel: React.FC = () => {
   return (
@@ -31,21 +31,8 @@ const ToolsWheel: React.FC = () => {
                 repeatDelay: 0.5,
               },
             }}
-            className='rounded-full w-[600px] h-[600px] flex items-center scale-150 justify-center relative'>
-            {[
-              { img: itunes, path: [itunes, x, framer, vscode, obs, threads, itunes] },
-              { img: github, path: [github, illustrator, design, ps, figma, photoshop, github] },
-              { img: x, path: [x, framer, vscode, obs, threads, itunes, x] },
-              { img: illustrator, path: [illustrator, design, ps, figma, photoshop, github, illustrator] },
-              { img: framer, path: [framer, vscode, obs, threads, itunes, x, framer] },
-              { img: design, path: [design, ps, figma, photoshop, github, illustrator, design] },
-              { img: vscode, path: [vscode, obs, threads, itunes, x, framer, vscode] },
-              { img: ps, path: [ps, figma, photoshop, github, illustrator, design, ps] },
-              { img: obs, path: [obs, threads, itunes, x, framer, vscode, obs] },
-              { img: figma, path: [figma, photoshop, github, illustrator, design, ps, figma] },
-              { img: threads, path: [threads, itunes, x, framer, vscode, obs, threads] },
-              { img: photoshop, path: [photoshop, github, illustrator, design, ps, figma, photoshop] }
-            ].map(({ img, path }, i) => {
+            className='rounded-full w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[700px] md:h-[700px] flex items-center scale-150 justify-center relative'>
+            {wheelPattern.map(({ img, path }, i) => {
               const keyframes = path.flatMap(p => [p.position.x, p.position.x]);
               const keyframesY = path.flatMap(p => [p.position.y, p.position.y]);
               return (

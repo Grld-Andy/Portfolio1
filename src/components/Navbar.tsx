@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   return (
     <div className='pb-20'>
       <div className='bg-black/80 z-50 w-full fixed flex justify-between items-center px-5 md:px-10 py-4'>
-        <ul className='flex gap-2 md:gap-8 text-[12px]'>
+        <ul className='flex gap-2 sm:gap-8 text-[12px] sm:text-[16px]'>
           <li>
             <NavLink to="/" className={linkClass}>
               HOME
