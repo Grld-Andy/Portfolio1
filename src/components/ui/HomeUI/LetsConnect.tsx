@@ -18,7 +18,7 @@ const LetsConnect: React.FC = () => {
                 <FormApp/>
             </div>
             <div className='flex justify-center'>
-                <div className='flex gap-10 md:gap-20 min-w-[500px] md:min-w-[1000px]'>
+                <div className='flex gap-10 md:mx-10 md:gap-20 min-w-[500px] md:w-[1000px]'>
                     <img className='w-[50px] md:w-[80px]' src='/icons/Figma icon.svg'/>
                     <img className='w-[50px] md:w-[80px]' src='/icons/github.svg'/>
                     <img className='w-[50px] md:w-[80px]' src='/icons/LinkedIn.svg'/>
