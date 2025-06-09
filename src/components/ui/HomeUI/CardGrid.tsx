@@ -4,7 +4,7 @@ import works from '../../../constants/works'
 
 const CardGrid: React.FC = () => {
   return (
-    <div className='mx-5 grid grid-cols-3 gap-2 md:gap-10 w-full'>
+    <div className='px-5 grid grid-cols-3 gap-2 md:gap-10 w-full'>
       {
         works.map((work, index) => (
           <Card work={work} key={index}/>

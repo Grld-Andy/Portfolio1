@@ -28,3 +28,11 @@
 .form_button_glow:hover{
   box-shadow: 5px 5px 20px #7232B8, -5px -5px 20px #683eda;
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

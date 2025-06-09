@@ -24,8 +24,8 @@ const Navbar: React.FC = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/studio" className={linkClass}>
-              STUDIO
+            <NavLink to="/work" className={linkClass}>
+              WORK
             </NavLink>
           </li>
         </ul>
