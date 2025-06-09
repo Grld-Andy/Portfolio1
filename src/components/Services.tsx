@@ -1,4 +1,3 @@
-import React from 'react';
 import { PiDotOutlineDuotone } from "react-icons/pi"; // Sample placeholder icon
 
 export default function ServicesSection() {

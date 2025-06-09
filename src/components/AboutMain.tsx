@@ -1,4 +1,3 @@
-import React from "react";
 import Icons from "./Icons";
 import WorkExperience from "./WorkExperience";
 import Services from "./Services"

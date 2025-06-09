@@ -1,4 +1,3 @@
-import React from "react";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaTwitter } from "react-icons/fa";
 import { LuInstagram } from "react-icons/lu";
