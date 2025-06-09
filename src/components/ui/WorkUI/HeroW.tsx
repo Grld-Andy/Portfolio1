@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroW: React.FC = () => {
   return (
-    <div className='flex flex-col gap-5 items-center justify-center w-full h-[80vh]'>
+    <div className='flex flex-col gap-5 items-center justify-center w-full'>
       <h2 className='w-full text_gradient0 font-bold text-[55px] md:text-[75px] text-center'>
         Brand Design
       </h2>
