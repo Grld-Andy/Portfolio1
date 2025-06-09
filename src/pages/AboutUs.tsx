@@ -1,8 +1,13 @@
 import React from 'react'
+import AboutMain from '../components/AboutMain'
 
 const AboutUs: React.FC = () => {
   return (
-    <div>AboutUs</div>
+    <>
+      <div>
+        <AboutMain/>
+      </div>
+    </>
   )
 }
 
