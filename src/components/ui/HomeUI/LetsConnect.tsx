@@ -4,7 +4,7 @@ import FormApp from './FormApp'
 const LetsConnect: React.FC = () => {
   return (
     <div className='flex flex-col gap-40'>
-        <p className='uppercase text-center w-full text_gradient text-[45px] md:text-[65px]'>
+        <p className='uppercase text-center w-full text_gradient text-[38px] px-5 sm:px-0 sm:text-[45px] md:text-[65px]'>
             Designing Seamless<br/>
             Experiences & Stunning<br/>
             Visuals
